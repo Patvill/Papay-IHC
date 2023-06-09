@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carrois+Gothic&display=swap');
 *,
 *::before,
 *::after{
@@ -401,14 +401,14 @@ footer .footer2{
 
 /* SECCION PREGUNTAS*/
 p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Carrois Gothic', sans-serif;
 
 }
 
 .faq_header-title{
-font-size: clamp(26px , 5vw , 40px);
-color: black;
-margin-bottom: 20px;
+    font-size: clamp(26px , 5vw , 40px);
+    color: black;
+    margin-bottom: 20px;
 }
 
 .faq_panel{
