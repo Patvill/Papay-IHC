@@ -14,7 +14,9 @@ body{
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
 }
-
+header img{
+    filter: drop-shadow( 5px 5px 5px #000);
+}
 .header{
     position: fixed;
     top: 0;

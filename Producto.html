@@ -11,15 +11,15 @@
 <body>
 
     <header class="header"> 
-        <div class="logo">Papay</div>
-        <input type="checkbox" id = "toggle"> 
+        <div class="logo"><img id="Logopapay" src="Logo.png" height="50px"   width="50px" alt="">Papay</div>
+        <input type="checkbox" id = "toggle">  
         <label for="toggle"><img class="Menu" src="menu.svg" alt="menu"></label>
 
         <nav class="navegation"> 
             <ul>
                 <li><a href="index1.html" class="activo">Inicio</a></li>
                 <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Ingresar.html">Ingresar</a>
+                <li><a href="IniciarSesion.html">Ingresar</a>
                     <ul> 
                         <li><a href="IniciarSesion.html">Iniciar Sesion</a></li>
                         <li><a href="Registrarse.html">Registrarse</a></li>
@@ -30,6 +30,58 @@
         </nav>
     </header>
     <!------------------------------------------------->
+    
+    <div class="papay_animado">
+        <div class="letter">P</div>
+        <div class="letter">A</div>
+        <div class="letter">P</div>
+        <div class="letter">A</div>
+        <div class="letter">Y</div>
+    </div>
+
+    <div class="video-container">
+        <video src="papayvideo.mp4" width="400" height="700" autoplay controls>
+        </video>
+    </div>
+
+    <section id="faq_container">  
+        <header class="faq_header">
+            <h1 class="faq_header-title">Preguntas Frecuentes
+            </h1>
+        </header>
+        <div class="faq_body">
+            <details aria-expanded="true" class="faq_panel" close> 
+                <summary class="faq_label">¿Se puede descargar la aplicacion en cualquier
+                    dispositivo movil?</summary>
+                    <div class="faq_panel-body">
+                        <p class="faq_panel-answer">Claro, la aplicacion se encuentra
+                            disponible en AppStore y PlayStore.</p>
+                    </div>
+            </details>
+            <details aria-expanded="false" class="faq_panel" close> 
+                <summary class="faq_label">¿Cualquier persona se puede resgistrar en la
+                    aplicación?</summary>
+                    <div class="faq_panel-body">
+                        <p class="faq_panel-answer">Si, cualquier persona puede resgistrarse, sea jubilado
+                            o no. 
+                        </p>
+                    </div>
+            </details>
+            <details aria-expanded="false" class="faq_panel" close> 
+                <summary class="faq_label">¿Comó se que esta aplicacion no es una estafa?</summary>
+                    <div class="faq_panel-body">
+                        <p class="faq_panel-answer">Constamos con el respaldo del Banco 
+                            de la Nación, ademas nos encontramos asociados a otras empresas.
+                        </p>
+                        <p>
+                            Asi que, no debes de dudar en que somos una aplicacion que busca 
+                            lo mejor para sus clientes.
+                        </p>
+                    </div>
+            </details>
+        </div>
+            
+    </section>
 
 </body>
 </html>

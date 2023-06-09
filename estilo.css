@@ -28,12 +28,16 @@ body{
     z-index: 100;
 }
 
+header img{
+    filter: drop-shadow( 5px 5px 5px #000);
+}
+
 .content1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     height: 40px; /*mover de abajo o hacia arriba*/
     height: 80vh !important;
-    background-image: url(pensionistas.jpeg);
+    background-image: url(jubilados.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +51,7 @@ body{
 .content1 p{
     font-size: 30px;
     font-weight: 300;
+    background-color: rgba(148, 148, 148, 0.550);
     color: rgb(33, 2, 2); /*color del texto*/
 }
 
@@ -116,7 +121,7 @@ body{
     height: 35px;
 }
 
-@media(max-width:950px){
+@media(max-width:650px){
     .header label {
         display: initial;
     }
@@ -201,13 +206,87 @@ body{
     margin-bottom: 15px;
 }
 
-footer{
+footer{ 
+    background-color: grey;
+    
+    
+}
+footer .footer1{
+
+}
+
+footer .footer2{ 
     background-color: black;
     color: orange;
     text-align: center;
     width: 100%;
-    min-height: 1rem;
+    min-height: 2rem;
     font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+/*-------------------Slider */
+
+.slider{
+    display: flex;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    align-items: center;
+} 
+.slider:before{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+    background:linear-gradient(-90deg,hsla(0,0%,96.9%,0), #f7f7f7);
+}
+.slider:after{
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+    background:linear-gradient(90deg,
+    hsla(0,0%,96.9%,0),
+    hsla(0,0%,96.9%,0.99) 99%);
+}
+
+.slider .slide-track{
+    display: flex;
+    animation:scroll 25s linear infinite;
+    -webkit-animation: scroll 25s linear infinite;
+    width: calc(240px * 10);
+}
+
+.slider .slide{
+    display: flex;
+}
+
+.slider .slide img{
+    width: 180px;
+    height: 80px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px,
+                rgba(0,0,0,0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(-240px * 5);
+        transform: translateX(calc(-240px * 5));
+    }
 }
 
 /*------------------Nosotros-----------------------------*/
@@ -285,3 +364,72 @@ footer{
 
 /*---------------Producto------------------------------------------------------------------------------------*/
 
+
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+/*PAPAY ANIMADO*/
+.papay_animado{
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    height: 100px;
+}
+
+.letter{
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor:grab;
+    color:black(44, 29, 2);
+}
+
+.letter:hover{
+    transform:translateY(-1rem);
+    background:-webkit-linear-gradient(120deg,hsl(19, 90%, 52%),
+    hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+/* SECCION PREGUNTAS*/
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.faq_header-title{
+font-size: clamp(26px , 5vw , 40px);
+color: black;
+margin-bottom: 20px;
+}
+
+.faq_panel{
+    padding: 7px 21px;
+    margin-bottom: 24px;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+
+.faq_label{
+    padding-block: 7px;
+    color: orange;
+    cursor: pointer;
+}
+
+.faq_label:hover{
+    color: orange;
+}
+
+.faq_panel-answer{
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
