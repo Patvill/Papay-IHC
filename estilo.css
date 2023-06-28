@@ -37,7 +37,7 @@ header img{
     display: flex;
     height: 40px; /*mover de abajo o hacia arriba*/
     height: 80vh !important;
-    background-image: url(jubilados.jpg);
+    background-image: url(img/jubilados.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
